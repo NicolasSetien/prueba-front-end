@@ -4,11 +4,12 @@ function PlaceSelect({ label }: { label: string }) {
   return (
     <div className="place_select">
       <h4 className="text-2xl">{label}</h4>
-      <input
-        type="text"
-        className="custom_field"
-        placeholder="---"
-        />
+      <select id="document-type" className="select custom_field" value="---">
+          <option disabled>---</option>
+          <option>Madrid</option>
+          <option>Nueva York</option>
+          <option>Buenos Aires</option>
+      </select>
     </div>
   )
 }

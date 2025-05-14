@@ -4,7 +4,7 @@ import Link from 'next/link'
 function FlightDetailsReview() {
   return (
     <div className="flight_details_review">
-        <Link href="/" className="flex flex-row justify-left items-center text-lg text-indigo-500">
+        <Link href="/" className="flex flex-row justify-left items-center text-lg text-slate-400">
           <span className="icon-[tabler--arrow-left] mx-2"></span>
           <h4> Seguir buscando</h4>
         </Link>
