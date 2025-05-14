@@ -6,10 +6,10 @@ const Navbar = () => {
     <div className="p-[16px] font-aleo">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <Image src="/vercel.svg" alt="Logo" width="40" height="40" />
+          <Image src="/logo.png" alt="Logo" width="40" height="40" />
         </Link>
         <div className="flex gap-4 flex-row">
-          <Link href="/flights/booking" className="px-4 py-2 hover:bg-indigo-400 rounded">
+          <Link href="/flights" className="px-4 py-2 hover:bg-indigo-400 rounded">
             Planes
           </Link>
           <Link href="/" className="px-4 py-2 hover:bg-indigo-400 rounded">

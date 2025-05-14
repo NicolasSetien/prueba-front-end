@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "flyonui";
+@plugin "@iconify/tailwind4";
 
 :root {
   --background: #ffffff;
@@ -31,7 +33,19 @@
 }
 
 @utility flight_selector {
-  @apply rounded-2xl flex flex-row bg-indigo-900 p-6 max-w-max;
+  @apply rounded-2xl flex flex-row bg-indigo-900 p-6 gap-4 w-7xl;
+}
+
+@utility place_select {
+  @apply rounded-2xl flex flex-col bg-indigo-600 p-3 gap-2 w-40;
+}
+
+@utility custom_field {
+  @apply h-10 !bg-indigo-400 !border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500
+}
+
+@utility class_select {
+  @apply h-30 w-40 mx-8 rounded-2xl flex justify-center items-center border-2 border-gray-300 p-4 focus:outline-none focus:border-indigo-500
 }
 
 body {
