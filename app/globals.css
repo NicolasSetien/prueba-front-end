@@ -19,8 +19,23 @@
   }
 }
 
+@utility brand_name {
+  font-weight: 700;
+  background-color: var(--color-yellow-500);
+  padding: 0 1.5rem;
+}
+
+@utility hero_section {
+  @apply max-w-screen bg-green-800 flex flex-col justify-center items-center h-75 backdrop-blur-md backdrop-brightness-30;
+  background-image: url('/plane.jpg');
+}
+
+@utility flight_selector {
+  @apply rounded-2xl flex flex-row bg-indigo-900 p-6 max-w-max;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-akshar), var(--font-aleo), var(--font-aleo-italic);
 }
