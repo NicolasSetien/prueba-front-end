@@ -8,8 +8,8 @@ const FlightSelector = () => {
       <Image src="/logo.png" alt="Logo" width="80" height="80"></Image>
       <PlaceSelect label={"Origen"}/>
       <PlaceSelect label={"Destino"}/>
-      <div className="grid grid-cols-2 gap-4">
-        <div className="">Fecha de salida:</div>
+      <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+        <div className="flight_selector_label">Fecha de salida:</div>
         <div className="flex flex-col">
           <input
             type="date"
@@ -18,9 +18,9 @@ const FlightSelector = () => {
         </div>
         <div className="col-span-2 flex items-center justify-end">
           <span>Solo ida </span>
-          <input type="checkbox" className="m-1 checkbox"/>
+          <input type="checkbox" className="m-1 switch switch-primary"/>
         </div>
-        <div className="">Fecha de retorno:</div>
+        <div className="flight_selector_label">Fecha de retorno:</div>
         <div className="flex flex-col">
           <input
             type="date"

@@ -33,19 +33,35 @@
 }
 
 @utility flight_selector {
-  @apply rounded-2xl flex flex-row bg-indigo-900 p-6 gap-4 w-7xl;
+  @apply rounded-2xl flex flex-row bg-indigo-900 p-6 gap-4 w-5xl;
 }
 
 @utility place_select {
   @apply rounded-2xl flex flex-col bg-indigo-600 p-3 gap-2 w-40;
 }
 
+@utility place_label {
+  @apply flex justify-center text-4xl font-bold;
+}
+
+@utility date_label {
+  @apply flex items-center justify-center text-xl;
+}
+
 @utility custom_field {
-  @apply h-10 !bg-indigo-400 !border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-indigo-500
+  @apply h-10 px-4 py-2 rounded-md !bg-indigo-100 !border-2 border-gray-300 text-black focus:outline-none focus:border-indigo-500
 }
 
 @utility class_select {
-  @apply h-30 w-40 mx-8 rounded-2xl flex justify-center items-center border-2 border-gray-300 p-4 focus:outline-none focus:border-indigo-500
+  @apply h-30 w-50 mx-8 rounded-2xl flex justify-center items-center border-2 border-gray-300 p-4 focus:outline-none focus:border-indigo-500
+}
+
+@utility flight_selector_label {
+  @apply flex items-center justify-end text-xl
+}
+
+@utility flight_details_review {
+  @apply rounded-2xl bg-indigo-100 border-2 border-zinc-700 text-zinc-950 p-4;
 }
 
 body {
