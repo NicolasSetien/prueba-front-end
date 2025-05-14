@@ -4,7 +4,7 @@ const TravelerDetails = ({index}: {index: number}) => {
 
   return (
     <div className="my-3 border-2 border-zinc-500 rounded-xl opacity-100 transition-opacity">
-        <div className="w-full flex p-2 rounded-t-lg text-2xl bg-emerald-600 text-white">
+        <div className="w-full flex px-4 py-2 rounded-t-lg text-2xl bg-emerald-600 text-white">
             Viajero {index}
         </div>
       <div className="p-5 rounded-b-lg grid grid-cols-2 gap-4">
@@ -19,8 +19,8 @@ const TravelerDetails = ({index}: {index: number}) => {
         <div className="col-span-2">
             <div className="traveler_label">Número de documento de identificación</div>
                 <div className="flex flex-row">
-                <select id="document-type" className="select custom_field max-w-max" value="-">
-                    <option disabled>-</option>
+                <select id="document-type" className="select custom_field max-w-max" defaultValue="-">
+                    <option>-</option>
                     <option>DNI</option>
                     <option>Pas.</option>
                 </select>
