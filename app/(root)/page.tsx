@@ -67,12 +67,19 @@ const destinations = Array.from(
     <>
       <div className="hero_section">
         <h2 className="md:text-6xl text-center text-4xl">Con <span className="brand_name">Globetrotter,</span> llegas a donde sea</h2>
-        <p className="md:text-3xl leading-10 text-center text-2xl">Acércate al viaje de tus sueños con nuestras tarifas competitivas.</p>
+        <p className="md:text-3xl leading-10 text-center text-2xl">Visita el destino de tus sueños con nuestras tarifas competitivas.</p>
       </div>
       <div className="flex flex-col justify-center items-center my-8 mx-20">
         <div className="flight_selector">
-          <PlaceSelect label={"Origen"}/>
-          <PlaceSelect label={"Destino"}/>
+          <div className="place_select">
+            <h4 className="text-2xl">Destino</h4>
+            <select id="document-type" className="select custom_field" value="---">
+                <option disabled>---</option>
+                <option>Madrid</option>
+                <option>Nueva York</option>
+                <option>Buenos Aires</option>
+            </select>
+          </div>
           <div className="grid md:grid-cols-2 gap-x-4 gap-y-2">
             <div className="flight_selector_label">Fecha de salida:</div>
             <div className="flex flex-col">
